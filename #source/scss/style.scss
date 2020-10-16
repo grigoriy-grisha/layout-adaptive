@@ -1,0 +1,17 @@
+@import "normalize";
+
+
+body {
+    box-sizing: border-box; 
+    height: 100vh;
+    background: #222 url(../image/bg.png)  100%;
+    background-size: cover;
+    background-position: top;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+@import "header";
+@import "main";
+@import "adaptation";
+@import "navigation-menu";
+

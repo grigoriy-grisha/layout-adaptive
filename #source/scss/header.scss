@@ -1,0 +1,129 @@
+
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.phone {
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+    background-color: initial;
+    text-decoration: none;
+    
+}
+
+.header__burger {
+    display: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    margin-bottom: 263px;
+    // .header__contact-info
+
+    &__contact-info {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    
+    .digital {
+        margin-left: 13px;
+      }
+    // .header__socials
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+    }
+
+    // .header__icon
+
+    &__icon {
+        &:first-child {
+            position: relative;
+            top: -2px;
+        }
+        &:not(:first-child) {
+            margin-left: 9px;
+        }
+    }
+    // .header__logo
+
+    &__logo{
+        margin: 0 auto;
+    }
+
+    // .header__button
+    &__button {
+        margin-right: 15px;
+        
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background: #fff;
+            color: #000;
+            & svg rect {
+                stroke: #000;
+            }
+            & svg path {
+                fill: #000;
+            }
+           
+        }
+  
+    }
+
+    &__calendar {
+        position: relative;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.04em;
+        margin-left: 13px;
+       
+    }
+
+}
+
+
+@media (max-width: 578px) {
+    // .header__logo
+
+    .header__logo svg{
+        width: 105px;
+        height: 21.41px;
+    }
+
+    .header__contact-info {
+        margin: 0;
+    }
+    .header__number {
+        margin-left: 10px;
+    }
+    .digital {
+        display: none;
+    }
+}

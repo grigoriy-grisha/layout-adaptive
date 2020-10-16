@@ -1,0 +1,186 @@
+.navigation-menu {
+    position: absolute;
+    top: -200vh;
+    right: 0;
+    width:100%;
+    background: #000;   
+    transition:ease 1s;
+}
+
+
+@media(max-width:768px) {
+    
+    .navigation-menu_open {
+        top: 0;
+    }
+    .navigation-menu {
+        
+
+        // .navigation-menu__header
+
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #242424;
+        }
+
+        // .navigation-menu__icons
+
+        &__icons {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            width: 45%;
+        }
+
+        // .navigation-menu__number
+
+        &__number {
+            margin-left: 50px;
+        }
+        .navigation-menu__phone {
+            position: relative;
+            font-weight: 500;
+            color: #fff;
+            background-color: initial;
+            text-decoration: none;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -24px;
+                height: 19px;
+                width: 19px;
+                background: url(../image/header/phone.svg) no-repeat 50%;
+            }
+        }
+
+
+        // .navigation-menu__socials
+
+        &__socials {
+
+            margin-left: 22px;
+            // .navigation-menu__socials_header
+
+            &_header {
+                display: block;
+            }
+
+            // .navigation-menu__socials_nav
+
+            &_nav {
+                display: none;
+            }
+        }
+
+        // navigation-menu__icon
+        &__icon {
+            display: inline-block;
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+
+        // .navigation-menu__logo
+
+        &__logo {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        // .navigation-menu__logo-text
+
+        &__logo-text {
+            margin-right: 13px;
+        }
+
+        // .navigation-menu__nav
+
+        &__nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        // .navigation-menu__item
+
+        &__item {
+            padding-top: 22px;
+            padding-bottom: 26px;
+            border-bottom: 1px solid #242424;
+            text-align: center;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            text-decoration: none;
+
+            // .navigation-menu__item_carryover
+
+            &_carryover {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+          
+        .navigation-menu__socials_nav {
+            display:  none;
+        }
+        
+        .navigation-menu__logo-navigation-menu {
+            display: none;
+        }
+        .navigation-menu__logo-header {
+            display: block;
+        }
+    }
+    .text:not(:last-child){
+        margin-right: 10px;
+    }
+}
+@media (max-width: 640px) {
+    .navigation-menu__logo-text {
+        display: none;
+    }
+}
+
+@media (max-width:578px) {
+
+    .navigation-menu__socials {
+        display: none;
+    }
+    .navigation-menu__number {
+        margin-left: 40px;
+    }
+    .navigation-menu__phone {
+        position: relative;
+        font-weight: 500;
+        color: #fff;
+        background-color: initial;
+        text-decoration: none;
+        &::before {
+            content: "";
+            display: none;
+        }
+    }
+    .navigation-menu__logo svg{
+        width: 163px;
+        height: 34px;
+    }
+    .navigation-menu__socials {
+        margin-left: 0;
+    }
+    .navigation-menu__logo-navigation-menu {
+        display: block;
+    }
+    .navigation-menu__item_carryover {
+        flex-direction: column;   
+    }
+    .navigation-menu .navigation-menu__socials_nav {     
+        display: block;
+        margin-top: 26px;
+        flex-basis: 100%;
+    }
+}
